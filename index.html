@@ -4,39 +4,947 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My Website</title>
+    <meta name="description"
+          content="CSIR NET Life Sciences preparation platform with study material, notes, mock tests, previous year questions and study plans.">
+
+    <title>LifeSci NET | CSIR-NET Life Sciences Preparation</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <header>
-        <h1>Welcome to My Website</h1>
-        <p>This website is completely free to host.</p>
+    <!-- ================= HEADER ================= -->
+
+    <header class="site-header">
+
+        <div class="container nav-container">
+
+            <a href="#" class="logo">
+                <span class="logo-mark">LS</span>
+
+                <span class="logo-text">
+                    LifeSci<span>NET</span>
+                </span>
+            </a>
+
+            <nav class="main-nav">
+                <a href="#home">Home</a>
+                <a href="#subjects">Subjects</a>
+                <a href="#resources">Resources</a>
+                <a href="#study-plan">Study Plan</a>
+                <a href="#tests">Mock Tests</a>
+            </nav>
+
+            <a href="#resources" class="nav-button">
+                Start Preparing
+            </a>
+
+            <button class="menu-button" aria-label="Open menu">
+                ☰
+            </button>
+
+        </div>
+
     </header>
 
+
+    <!-- ================= HERO ================= -->
+
     <main>
-        <h2>About Me</h2>
 
-        <p>
-            Hello! This is my first website.
-        </p>
+        <section class="hero" id="home">
 
-        <button onclick="sayHello()">
-            Click Me
-        </button>
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+
+                    <div class="eyebrow">
+                        <span class="eyebrow-dot"></span>
+                        CSIR-NET LIFE SCIENCES
+                    </div>
+
+                    <h1>
+                        Prepare smarter.
+                        <span>Understand better.</span>
+                        Qualify with confidence.
+                    </h1>
+
+                    <p class="hero-description">
+                        A focused preparation platform for CSIR-NET Life Sciences
+                        aspirants — with structured notes, previous year questions,
+                        mock tests and practical study plans.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a href="#subjects" class="button button-primary">
+                            Explore Subjects
+                            <span>→</span>
+                        </a>
+
+                        <a href="#study-plan" class="button button-secondary">
+                            View Study Plan
+                        </a>
+
+                    </div>
+
+                    <div class="hero-trust">
+
+                        <div class="trust-item">
+                            <strong>13</strong>
+                            <span>Units</span>
+                        </div>
+
+                        <div class="trust-line"></div>
+
+                        <div class="trust-item">
+                            <strong>PYQs</strong>
+                            <span>Practice</span>
+                        </div>
+
+                        <div class="trust-line"></div>
+
+                        <div class="trust-item">
+                            <strong>Part A</strong>
+                            <span>Practice</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Hero study card -->
+
+                <div class="hero-visual">
+
+                    <div class="study-card">
+
+                        <div class="card-top">
+
+                            <div>
+                                <p class="small-label">TODAY'S FOCUS</p>
+                                <h3>Cell Biology</h3>
+                            </div>
+
+                            <div class="progress-circle">
+                                <span>72%</span>
+                            </div>
+
+                        </div>
+
+                        <div class="progress-bar">
+                            <div class="progress-value"></div>
+                        </div>
+
+                        <div class="study-list">
+
+                            <div class="study-item completed">
+                                <span class="check">✓</span>
+                                <div>
+                                    <strong>Cell membrane</strong>
+                                    <small>Concept review</small>
+                                </div>
+                            </div>
+
+                            <div class="study-item completed">
+                                <span class="check">✓</span>
+                                <div>
+                                    <strong>Cell signalling</strong>
+                                    <small>Notes + diagrams</small>
+                                </div>
+                            </div>
+
+                            <div class="study-item">
+                                <span class="empty-check"></span>
+                                <div>
+                                    <strong>PYQ practice</strong>
+                                    <small>20 questions</small>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <a href="#resources" class="card-link">
+                            Continue studying →
+                        </a>
+
+                    </div>
+
+
+                    <div class="floating-card floating-card-one">
+                        <span class="floating-icon">✓</span>
+                        <div>
+                            <strong>Daily Progress</strong>
+                            <small>Keep going!</small>
+                        </div>
+                    </div>
+
+                    <div class="floating-card floating-card-two">
+                        <span class="floating-icon orange">★</span>
+                        <div>
+                            <strong>Mock Score</strong>
+                            <small>78 / 100</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURES ================= -->
+
+        <section class="features">
+
+            <div class="container">
+
+                <div class="feature-grid">
+
+                    <div class="feature">
+                        <div class="feature-icon">📚</div>
+                        <div>
+                            <h3>Concept First</h3>
+                            <p>Learn the logic behind every topic.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature-icon">🧠</div>
+                        <div>
+                            <h3>Exam Focused</h3>
+                            <p>Practice what actually matters.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature-icon">📈</div>
+                        <div>
+                            <h3>Track Progress</h3>
+                            <p>Know your strengths and weak areas.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature-icon">🎯</div>
+                        <div>
+                            <h3>Study with Purpose</h3>
+                            <p>Follow a structured preparation plan.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SUBJECTS ================= -->
+
+        <section class="section" id="subjects">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <span class="section-label">SYLLABUS</span>
+
+                        <h2>
+                            Master the
+                            <span>Life Sciences</span>
+                            syllabus.
+                        </h2>
+                    </div>
+
+                    <p>
+                        Break the syllabus into manageable units and focus
+                        on concepts, diagrams, PYQs and high-yield topics.
+                    </p>
+
+                </div>
+
+
+                <div class="subject-grid">
+
+                    <a href="#" class="subject-card">
+
+                        <span class="unit-number">01</span>
+
+                        <div class="subject-icon">🧬</div>
+
+                        <h3>Molecules &amp; Their Interaction</h3>
+
+                        <p>
+                            Biomolecules, enzymes, metabolism and molecular interactions.
+                        </p>
+
+                        <span class="learn-more">Explore unit →</span>
+
+                    </a>
+
+
+                    <a href="#" class="subject-card featured-subject">
+
+                        <span class="unit-number">02</span>
+
+                        <div class="subject-icon">🔬</div>
+
+                        <h3>Cellular Organization</h3>
+
+                        <p>
+                            Cell structure, membranes, organelles, trafficking and signalling.
+                        </p>
+
+                        <span class="learn-more">Explore unit →</span>
+
+                    </a>
+
+
+                    <a href="#" class="subject-card">
+
+                        <span class="unit-number">03</span>
+
+                        <div class="subject-icon">🧫</div>
+
+                        <h3>Fundamental Processes</h3>
+
+                        <p>
+                            DNA replication, transcription, translation and regulation.
+                        </p>
+
+                        <span class="learn-more">Explore unit →</span>
+
+                    </a>
+
+
+                    <a href="#" class="subject-card">
+
+                        <span class="unit-number">04</span>
+
+                        <div class="subject-icon">🌱</div>
+
+                        <h3>Plant Physiology</h3>
+
+                        <p>
+                            Photosynthesis, transport, growth and plant development.
+                        </p>
+
+                        <span class="learn-more">Explore unit →</span>
+
+                    </a>
+
+
+                    <a href="#" class="subject-card">
+
+                        <span class="unit-number">05</span>
+
+                        <div class="subject-icon">🫀</div>
+
+                        <h3>Animal Physiology</h3>
+
+                        <p>
+                            Nervous, endocrine, cardiovascular and respiratory systems.
+                        </p>
+
+                        <span class="learn-more">Explore unit →</span>
+
+                    </a>
+
+
+                    <a href="#" class="subject-card">
+
+                        <span class="unit-number">06</span>
+
+                        <div class="subject-icon">🧠</div>
+
+                        <h3>Development &amp; Genetics</h3>
+
+                        <p>
+                            Developmental biology, genetics, inheritance and variation.
+                        </p>
+
+                        <span class="learn-more">Explore unit →</span>
+
+                    </a>
+
+
+                    <a href="#" class="subject-card">
+
+                        <span class="unit-number">07</span>
+
+                        <div class="subject-icon">🌍</div>
+
+                        <h3>Ecology &amp; Evolution</h3>
+
+                        <p>
+                            Population ecology, communities, ecosystems and evolution.
+                        </p>
+
+                        <span class="learn-more">Explore unit →</span>
+
+                    </a>
+
+
+                    <a href="#" class="subject-card">
+
+                        <span class="unit-number">08</span>
+
+                        <div class="subject-icon">🧪</div>
+
+                        <h3>Applied Biology</h3>
+
+                        <p>
+                            Biotechnology, methods, techniques and applications.
+                        </p>
+
+                        <span class="learn-more">Explore unit →</span>
+
+                    </a>
+
+                </div>
+
+                <div class="center-button">
+                    <a href="#" class="button button-outline">
+                        View Complete Syllabus →
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= RESOURCES ================= -->
+
+        <section class="section resources-section" id="resources">
+
+            <div class="container">
+
+                <div class="section-heading centered">
+
+                    <span class="section-label">PREPARATION TOOLKIT</span>
+
+                    <h2>
+                        Everything you need
+                        <span>in one place.</span>
+                    </h2>
+
+                    <p>
+                        Build strong concepts, practise regularly and learn
+                        from your mistakes.
+                    </p>
+
+                </div>
+
+
+                <div class="resource-grid">
+
+                    <a href="#" class="resource-card">
+
+                        <div class="resource-top">
+                            <span class="resource-icon blue">📖</span>
+                            <span class="resource-arrow">↗</span>
+                        </div>
+
+                        <h3>Study Notes</h3>
+
+                        <p>
+                            Concise, exam-oriented notes for important concepts
+                            and high-yield topics.
+                        </p>
+
+                        <span class="resource-link">
+                            Browse notes →
+                        </span>
+
+                    </a>
+
+
+                    <a href="#" class="resource-card">
+
+                        <div class="resource-top">
+                            <span class="resource-icon purple">❓</span>
+                            <span class="resource-arrow">↗</span>
+                        </div>
+
+                        <h3>Previous Year Questions</h3>
+
+                        <p>
+                            Practise questions from previous examinations and
+                            understand recurring concepts.
+                        </p>
+
+                        <span class="resource-link">
+                            Practice PYQs →
+                        </span>
+
+                    </a>
+
+
+                    <a href="#" class="resource-card">
+
+                        <div class="resource-top">
+                            <span class="resource-icon green">✓</span>
+                            <span class="resource-arrow">↗</span>
+                        </div>
+
+                        <h3>Mock Tests</h3>
+
+                        <p>
+                            Test your preparation, improve speed and identify
+                            weak areas before the exam.
+                        </p>
+
+                        <span class="resource-link">
+                            Take a mock test →
+                        </span>
+
+                    </a>
+
+
+                    <a href="#" class="resource-card">
+
+                        <div class="resource-top">
+                            <span class="resource-icon orange">🧮</span>
+                            <span class="resource-arrow">↗</span>
+                        </div>
+
+                        <h3>Part A Practice</h3>
+
+                        <p>
+                            Develop analytical and quantitative reasoning skills
+                            with regular practice.
+                        </p>
+
+                        <span class="resource-link">
+                            Start Part A →
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= STUDY PLAN ================= -->
+
+        <section class="study-plan-section" id="study-plan">
+
+            <div class="container study-plan-grid">
+
+                <div class="plan-content">
+
+                    <span class="section-label">SMART PREPARATION</span>
+
+                    <h2>
+                        Don't just study.
+                        <span>Study with a plan.</span>
+                    </h2>
+
+                    <p>
+                        A good preparation strategy balances concept building,
+                        revision, PYQs and mock tests. Follow a simple routine
+                        and stay consistent.
+                    </p>
+
+
+                    <div class="plan-list">
+
+                        <div class="plan-item">
+                            <span>01</span>
+                            <div>
+                                <h3>Build concepts</h3>
+                                <p>Understand the topic before memorising it.</p>
+                            </div>
+                        </div>
+
+                        <div class="plan-item">
+                            <span>02</span>
+                            <div>
+                                <h3>Solve PYQs</h3>
+                                <p>Learn how concepts are tested in the exam.</p>
+                            </div>
+                        </div>
+
+                        <div class="plan-item">
+                            <span>03</span>
+                            <div>
+                                <h3>Revise actively</h3>
+                                <p>Use short notes, diagrams and active recall.</p>
+                            </div>
+                        </div>
+
+                        <div class="plan-item">
+                            <span>04</span>
+                            <div>
+                                <h3>Test yourself</h3>
+                                <p>Take mocks and analyse every mistake.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <a href="#" class="button button-primary">
+                        Get the Study Plan →
+                    </a>
+
+                </div>
+
+
+                <div class="weekly-plan">
+
+                    <div class="weekly-header">
+
+                        <div>
+                            <span>WEEKLY PLAN</span>
+                            <h3>Week 04</h3>
+                        </div>
+
+                        <span class="week-badge">ON TRACK</span>
+
+                    </div>
+
+
+                    <div class="day-row">
+                        <span class="day">MON</span>
+                        <div class="day-info">
+                            <strong>Cell Biology</strong>
+                            <small>Concepts + Notes</small>
+                        </div>
+                        <span class="day-status done">✓</span>
+                    </div>
+
+                    <div class="day-row">
+                        <span class="day">TUE</span>
+                        <div class="day-info">
+                            <strong>Biochemistry</strong>
+                            <small>Revision + PYQs</small>
+                        </div>
+                        <span class="day-status done">✓</span>
+                    </div>
+
+                    <div class="day-row">
+                        <span class="day">WED</span>
+                        <div class="day-info">
+                            <strong>Genetics</strong>
+                            <small>Concepts + Practice</small>
+                        </div>
+                        <span class="day-status done">✓</span>
+                    </div>
+
+                    <div class="day-row">
+                        <span class="day">THU</span>
+                        <div class="day-info">
+                            <strong>Part A</strong>
+                            <small>Reasoning practice</small>
+                        </div>
+                        <span class="day-status current">→</span>
+                    </div>
+
+                    <div class="day-row">
+                        <span class="day">FRI</span>
+                        <div class="day-info">
+                            <strong>Ecology</strong>
+                            <small>Concepts + PYQs</small>
+                        </div>
+                        <span class="day-status upcoming">○</span>
+                    </div>
+
+                    <div class="day-row">
+                        <span class="day">SAT</span>
+                        <div class="day-info">
+                            <strong>Mock Test</strong>
+                            <small>Full-length practice</small>
+                        </div>
+                        <span class="day-status upcoming">○</span>
+                    </div>
+
+                    <div class="day-row">
+                        <span class="day">SUN</span>
+                        <div class="day-info">
+                            <strong>Revision</strong>
+                            <small>Weak areas + mistakes</small>
+                        </div>
+                        <span class="day-status upcoming">○</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= MOCK TESTS ================= -->
+
+        <section class="section" id="tests">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <span class="section-label">PRACTICE</span>
+                        <h2>
+                            Test your
+                            <span>preparation.</span>
+                        </h2>
+                    </div>
+
+                    <p>
+                        Regular testing helps you improve accuracy, speed
+                        and confidence.
+                    </p>
+
+                </div>
+
+
+                <div class="test-grid">
+
+                    <div class="test-card">
+
+                        <div class="test-icon">A</div>
+
+                        <div class="test-details">
+
+                            <span class="test-tag">PART A</span>
+
+                            <h3>General Aptitude</h3>
+
+                            <p>
+                                Reasoning, numerical ability and analytical thinking.
+                            </p>
+
+                            <div class="test-meta">
+                                <span>📝 20 Questions</span>
+                                <span>⏱ 30 Min</span>
+                            </div>
+
+                        </div>
+
+                        <a href="#" class="test-button">
+                            Start →
+                        </a>
+
+                    </div>
+
+
+                    <div class="test-card">
+
+                        <div class="test-icon biology">🧬</div>
+
+                        <div class="test-details">
+
+                            <span class="test-tag">LIFE SCIENCES</span>
+
+                            <h3>Cell Biology Quiz</h3>
+
+                            <p>
+                                Test your understanding of cellular organisation.
+                            </p>
+
+                            <div class="test-meta">
+                                <span>📝 25 Questions</span>
+                                <span>⏱ 40 Min</span>
+                            </div>
+
+                        </div>
+
+                        <a href="#" class="test-button">
+                            Start →
+                        </a>
+
+                    </div>
+
+
+                    <div class="test-card">
+
+                        <div class="test-icon genetics">🧬</div>
+
+                        <div class="test-details">
+
+                            <span class="test-tag">GENETICS</span>
+
+                            <h3>Genetics Practice</h3>
+
+                            <p>
+                                Challenge yourself with inheritance and molecular genetics.
+                            </p>
+
+                            <div class="test-meta">
+                                <span>📝 25 Questions</span>
+                                <span>⏱ 40 Min</span>
+                            </div>
+
+                        </div>
+
+                        <a href="#" class="test-button">
+                            Start →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= MOTIVATION ================= -->
+
+        <section class="quote-section">
+
+            <div class="container">
+
+                <div class="quote-box">
+
+                    <div class="quote-mark">“</div>
+
+                    <blockquote>
+                        You don't need to study everything at once.
+                        You need to understand one concept at a time
+                        and keep moving forward.
+                    </blockquote>
+
+                    <p>
+                        — Your preparation, your pace, your goal.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CTA ================= -->
+
+        <section class="cta-section">
+
+            <div class="container">
+
+                <div class="cta-box">
+
+                    <div>
+
+                        <span class="section-label light">
+                            YOUR PREPARATION STARTS HERE
+                        </span>
+
+                        <h2>
+                            Ready to prepare
+                            <span>with purpose?</span>
+                        </h2>
+
+                        <p>
+                            Start with the syllabus, build your foundation
+                            and make every study session count.
+                        </p>
+
+                    </div>
+
+                    <a href="#subjects" class="button button-white">
+                        Start Learning →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
     </main>
 
-    <footer>
-        <p>© 2026 My Website</p>
-    </footer>
 
-    <script>
-        function sayHello() {
-            alert("Hello! 👋");
-        }
-    </script>
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+
+                <a href="#" class="logo footer-logo">
+                    <span class="logo-mark">LS</span>
+
+                    <span class="logo-text">
+                        LifeSci<span>NET</span>
+                    </span>
+                </a>
+
+                <p>
+                    A student-friendly preparation platform for
+                    CSIR-NET Life Sciences aspirants.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Learn</h4>
+
+                <a href="#subjects">Syllabus</a>
+                <a href="#resources">Study Notes</a>
+                <a href="#resources">PYQs</a>
+                <a href="#tests">Mock Tests</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Prepare</h4>
+
+                <a href="#study-plan">Study Plan</a>
+                <a href="#">Revision</a>
+                <a href="#">Part A</a>
+                <a href="#">Important Topics</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Connect</h4>
+
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Telegram</a>
+                <a href="#">YouTube</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="container footer-bottom">
+
+            <p>
+                © 2026 LifeSciNET. Made for Life Sciences aspirants.
+            </p>
+
+            <div>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
+
+        </div>
+
+    </footer>
 
 </body>
 </html>
